@@ -32,7 +32,7 @@ app.use(session({
   cookie:{
     httpOnly:false,
     secure:false,
-    maxAge: 10000
+    maxAge: 60000 * 10 //10 minutos
   },  
   rolling:true,
   resave:true,
